@@ -1,36 +1,102 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# AI Fake News Detector
+
+A modern web application that uses AI to detect fake news and misinformation in text content. This full-stack application provides real-time analysis of news articles, statements, and claims to help users distinguish fact from fiction.
+
+![AI Fake News Detector Screenshot](public/screenshot.png)
+
+## Features
+
+- **Claim Detection**: Identifies factual claims in text content
+- **Fact Verification**: Verifies claims against trusted sources
+- **Confidence Analysis**: Provides confidence ratings (True, False, Misleading, Unverified)
+- **Source Citations**: Links to credible sources that support or contradict claims
+- **Modern UI/UX**: Responsive design with dark theme and smooth animations
+- **Real-time Processing**: Quick analysis with visual feedback
+
+## Tech Stack
+
+- **Frontend**: Next.js, React, Tailwind CSS, Framer Motion
+- **UI Components**: Custom components with Heroicons
+- **Styling**: Tailwind CSS for responsive design
+- **Animations**: Framer Motion for smooth transitions
+- **Backend**: (To be implemented with Python)
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- Node.js 18.0 or later
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/AI-Fake-News-Detector.git
+   cd AI-Fake-News-Detector
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. Run the development server:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
+
+## Project Structure
+
+```
+AI-Fake-News-Detector/
+├── public/              # Static assets
+├── src/
+│   ├── app/             # Next.js app pages
+│   │   ├── page.js      # Homepage
+│   │   ├── about/       # About page
+│   │   └── privacy/     # Privacy policy page
+│   ├── components/      # Reusable components
+│   │   ├── Navbar.js
+│   │   ├── Footer.js
+│   │   ├── Hero.js
+│   │   ├── Features.js
+│   │   ├── FactCheckForm.js
+│   │   ├── FactCheckResult.js
+│   │   └── Loader.js
+├── tailwind.config.js   # Tailwind CSS configuration
+└── package.json         # Project dependencies
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Development Roadmap
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- [x] Frontend UI design and implementation
+- [x] Mock fact-checking functionality
+- [ ] Python backend with NLP models
+- [ ] API integration between frontend and backend
+- [ ] User accounts and saved results
+- [ ] Browser extension
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Contributing
 
-## Learn More
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-To learn more about Next.js, take a look at the following resources:
+## License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Acknowledgments
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- This project was created as part of combating misinformation online
+- Inspired by fact-checking organizations and their important work
+- Built with modern web technologies and AI
